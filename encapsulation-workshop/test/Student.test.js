@@ -32,10 +32,8 @@ describe('Student', ()=>{
 })
 
 describe('Student', ()=>{
-
-    let newStudent = new Student("Dan", "7C");
     
     it('should return C', ()=>{
-        expect(newStudent.extractForm()).equals("C");
+        expect(newStudent.extractForm("7C")).equals("C");
     })
 })
