@@ -37,3 +37,12 @@ describe('Student', ()=>{
         expect(Student.extractForm("7C")).equals("C");
     })
 })
+
+describe('Student', ()=>{
+    
+    it('should return the year', ()=>{
+        expect(Student.extractYear("7C")).equals("7");
+        expect(Student.extractYear("11A")).equals("11");
+
+    })
+})
