@@ -5,6 +5,10 @@ class Teacher {
         this.subject = subject;
         this.yearsOfService = 0;
     }
+
+    getName() {
+        return this.name;
+    }
 }
 
 module.exports = Teacher;
