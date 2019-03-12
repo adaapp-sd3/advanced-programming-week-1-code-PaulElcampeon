@@ -33,3 +33,12 @@ describe('Teacher', ()=>{
         expect(newTeacher.getInitials()).equals("S.O");
     })
 })
+
+describe('Teacher', ()=>{
+
+    let newTeacher = new Teacher("Sally", "S.O", "Maths");
+    
+    it('should return S.O', ()=>{
+        expect(newTeacher.getSubject()).equals("Maths");
+    })
+})
