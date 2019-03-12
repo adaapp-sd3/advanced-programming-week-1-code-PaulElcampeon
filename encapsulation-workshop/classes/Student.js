@@ -1,7 +1,8 @@
 class Student {
     constructor(name, form) {
         this.name = name;
-        this.form = form;
+        this.form = Student.extractForm(form);
+        this.year = Student.extractYear(form)
     }
 
     getName() {
