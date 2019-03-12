@@ -21,6 +21,10 @@ class Teacher {
     getYearsOfService() {
         return this.yearsOfService;
     }
+
+    setYearsOfService(yearsOfService) {
+        this.yearsOfService = yearsOfService;
+    }
 }
 
 module.exports = Teacher;
