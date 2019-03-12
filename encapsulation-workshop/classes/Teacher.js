@@ -13,6 +13,10 @@ class Teacher {
     getInitials() {
         return this.initials;
     }
+
+    getSubject() {
+        return this.subject;
+    }
 }
 
 module.exports = Teacher;
