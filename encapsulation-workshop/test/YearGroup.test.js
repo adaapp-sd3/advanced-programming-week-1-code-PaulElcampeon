@@ -19,6 +19,14 @@ describe('YearGroup', ()=>{
     it('Should create a year group with year 7 and headOfYear Sally', ()=>{
         expect(myYearGroup.year).equals(7);
         expect(myYearGroup.headOfYear).equals("Sally");
+    })
+})
 
+describe('YearGroup', ()=>{
+
+    let myYearGroup = new YearGroup(7,"Sally");
+    
+    it('Should return 7', ()=>{
+        expect(myYearGroup.getYear()).equals(7);
     })
 })
