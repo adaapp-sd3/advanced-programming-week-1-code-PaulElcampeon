@@ -30,3 +30,12 @@ describe('Student', ()=>{
         expect(newStudent.getForm()).equals("7C");
     })
 })
+
+describe('Student', ()=>{
+
+    let newStudent = new Student("Dan", "7C");
+    
+    it('should return C', ()=>{
+        expect(newStudent.extractForm()).equals("C");
+    })
+})
