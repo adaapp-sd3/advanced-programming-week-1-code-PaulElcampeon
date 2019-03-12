@@ -7,6 +7,10 @@ class Student {
     getName() {
         return this.name;
     }
+
+    getForm() {
+        return this.form;
+    }
 }
 
 module.exports = Student
