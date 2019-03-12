@@ -42,3 +42,12 @@ describe('Teacher', ()=>{
         expect(newTeacher.getSubject()).equals("Maths");
     })
 })
+
+describe('Teacher', ()=>{
+
+    let newTeacher = new Teacher("Sally", "S.O", "Maths");
+    
+    it('should return S.O', ()=>{
+        expect(newTeacher.getYearsOfService()).equals(0);
+    })
+})
