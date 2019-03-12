@@ -38,7 +38,7 @@ describe('Teacher', ()=>{
 
     let newTeacher = new Teacher("Sally", "S.O", "Maths");
     
-    it('should return S.O', ()=>{
+    it('should return Maths', ()=>{
         expect(newTeacher.getSubject()).equals("Maths");
     })
 })
@@ -47,7 +47,18 @@ describe('Teacher', ()=>{
 
     let newTeacher = new Teacher("Sally", "S.O", "Maths");
     
-    it('should return S.O', ()=>{
+    it('should return 0', ()=>{
         expect(newTeacher.getYearsOfService()).equals(0);
+    })
+})
+
+describe('Teacher', ()=>{
+
+    let newTeacher = new Teacher("Sally", "S.O", "Maths");
+
+    newTeacher.setYearsOfService(5);
+    
+    it('should return 5', ()=>{
+        expect(newTeacher.getYearsOfService()).equals(5);
     })
 })
