@@ -14,3 +14,13 @@ describe('Teacher', ()=>{
         expect(newTeacher.subject).equals("Maths");
     })
 })
+
+
+describe('Teacher', ()=>{
+
+    let newTeacher = new Teacher("Sally", "S.O", "Maths");
+    
+    it('should create a Teacher object with all relevant fields', ()=>{
+        expect(newTeacher.getName()).equals("Sally");
+    })
+})
