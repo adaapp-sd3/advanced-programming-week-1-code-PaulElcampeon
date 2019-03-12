@@ -30,3 +30,12 @@ describe('YearGroup', ()=>{
         expect(myYearGroup.getYear()).equals(7);
     })
 })
+
+describe('YearGroup', ()=>{
+
+    let myYearGroup = new YearGroup(7,"Sally");
+    
+    it('Should Sally', ()=>{
+        expect(myYearGroup.getHeadOfYear()).equals("Sally");
+    })
+})
