@@ -20,7 +20,16 @@ describe('Teacher', ()=>{
 
     let newTeacher = new Teacher("Sally", "S.O", "Maths");
     
-    it('should create a Teacher object with all relevant fields', ()=>{
+    it('should return Sally', ()=>{
         expect(newTeacher.getName()).equals("Sally");
+    })
+})
+
+describe('Teacher', ()=>{
+
+    let newTeacher = new Teacher("Sally", "S.O", "Maths");
+    
+    it('should return S.O', ()=>{
+        expect(newTeacher.getInitials()).equals("S.O");
     })
 })
