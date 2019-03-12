@@ -11,3 +11,14 @@ describe('YearGroup', ()=>{
         expect(myYearGroup).to.be.an.instanceOf(YearGroup);
     })
 })
+
+describe('YearGroup', ()=>{
+
+    let myYearGroup = new YearGroup(7,"Sally");
+    
+    it('Should create a year group with year 7 and headOfYear Sally', ()=>{
+        expect(myYearGroup.year).equals(7);
+        expect(myYearGroup.headOfYear).equals("Sally");
+
+    })
+})
