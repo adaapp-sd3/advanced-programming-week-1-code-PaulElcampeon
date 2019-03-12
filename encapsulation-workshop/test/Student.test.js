@@ -51,7 +51,7 @@ describe('Student', ()=>{
 
     let newStudent = new Student("Dan", "7C");
     
-    it('should return the year', ()=>{
+    it('should return the year and form seperately', ()=>{
         console.log(newStudent.year)
 
         console.log(newStudent.form)
