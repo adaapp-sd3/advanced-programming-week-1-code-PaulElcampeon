@@ -1,6 +1,7 @@
 class YearGroup {
-    constructor() {
-        
+    constructor(year, headOfYear) {
+        this.year = year;
+        this.headOfYear = headOfYear;
     }
 }
 
