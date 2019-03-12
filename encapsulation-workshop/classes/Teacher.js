@@ -9,6 +9,10 @@ class Teacher {
     getName() {
         return this.name;
     }
+
+    getInitials() {
+        return this.initials;
+    }
 }
 
 module.exports = Teacher;
