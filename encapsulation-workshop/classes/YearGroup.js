@@ -7,6 +7,10 @@ class YearGroup {
     getYear() {
         return this.year;
     }
+
+    getHeadOfYear() {
+        return this.headOfYear;
+    }
 }
 
 module.exports = YearGroup;
