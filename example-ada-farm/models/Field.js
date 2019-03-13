@@ -24,7 +24,8 @@ class Field {
         // Get the crop name from the field name
         var cropName = this.name.split(' ') // => e.g. "Wheat"
         // Add a new crop to the field's list of crops
-        this.crops.push(new Crop(cropName[0], this, x, y))
+        
+        this.crops.push(this.typeOfCrop(cropName[0], x, y))
     }
 
     containsPoint(x, y) {
@@ -37,5 +38,20 @@ class Field {
         var isInHorizontalRange = x > left && x < right
 
         return isInHorizontalRange && isInVerticalRange
+    }
+
+    typeOfCrop(name, x, y) {
+        if (name == "Wheat") {
+            return new Wheat(this, x, y)
+        }
+        if (name == "Carrot") {
+            return new Carrot(this, x, y)
+        }
+        if (name == "Pumpkin") {
+            return new Pumpkin(this, x, y)
+        }
+        if (name == "Tiger") {
+            return new Tiger(this, x, y)
+        }
     }
 }
